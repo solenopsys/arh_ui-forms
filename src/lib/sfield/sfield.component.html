@@ -1,0 +1,74 @@
+
+<div style="padding-top: 10px; padding-bottom: 10px">
+  <ng-container [ngSwitch]="config?.type">
+    <fui-suid-field *ngSwitchCase="FT.UID" [value]="data" [width]="width">
+    </fui-suid-field>
+    <fui-stext-field
+      *ngSwitchCase="FT.STRING"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-stext-field>
+    <fui-smultiline-tex-field
+      *ngSwitchCase="FT.STRING_MULTILINE"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-smultiline-tex-field>
+    <fui-snumber-field
+      *ngSwitchCase="FT.NUMBER"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-snumber-field>
+    <fui-sdate-field
+      *ngSwitchCase="FT.DATE "
+      [time]="false"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-sdate-field>
+    <fui-sfile-field
+      *ngSwitchCase="FT.FILE"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-sfile-field>
+    <fui-sdate-field
+      *ngSwitchCase="FT.DATETIME"
+      [time]="true"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-sdate-field>
+    <fui-scheckbox-field
+      *ngSwitchCase="FT.BOOLEAN"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [width]="width"
+    >
+    </fui-scheckbox-field>
+<!--    <fui-scode-field-->
+<!--      *ngSwitchCase="FT.CODE"-->
+<!--      [value]="data"-->
+<!--      (valueChange)="dataChange.emit($event)"-->
+<!--      [language]="config.format"-->
+<!--      [width]="width"-->
+<!--    >-->
+<!--    </fui-scode-field>-->
+    <fui-sselect-enity
+      *ngSwitchCase="FT.EUID"
+      [value]="data"
+      (valueChange)="dataChange.emit($event)"
+      [dataProvider]="initProvider(config.link.titleField)"
+      [width]="width"
+    >
+    </fui-sselect-enity>
+  </ng-container>
+</div>
