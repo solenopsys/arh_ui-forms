@@ -1,4 +1,5 @@
 {
+  "name": "forms",
   "projectType": "library",
   "sourceRoot": "libs/fui/forms/src",
   "prefix": "hyperconverged",
