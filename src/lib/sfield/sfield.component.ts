@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, Inject, Input, OnInit, Output } from "@angular/core";
 import { DataProvider, EntityTitle, FieldType, FormField } from "@solenopsys/uimatrix-utils";
 import { ProviderService } from "../provider.service";
 
@@ -25,7 +25,11 @@ export class SFieldComponent implements OnInit {
   @Input()
   width!: number;
 
-  constructor(private ps: ProviderService) {}
+
+  constructor(
+    @Inject("ps")
+    private ps: ProviderService
+  ) {}
 
   ngOnInit(): void {}
 

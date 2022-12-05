@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnDestroy, OnInit, Output,} from '@angular/core';
+import { Component, EventEmitter, Inject, Input, OnDestroy, OnInit, Output } from "@angular/core";
 import {AbstractField} from '../sfield/abstract-field.component';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from "rxjs";
@@ -25,7 +25,9 @@ export class SFileFieldComponent
 
   fileToUpload: any;
 
-  constructor(private httpClient: HttpClient, private ps: ProviderService) {
+  constructor(private httpClient: HttpClient,
+              @Inject("ps")
+              private ps: ProviderService) {
     super();
     this.dp = ps.getProvider( 'file', 'file.name');
   }

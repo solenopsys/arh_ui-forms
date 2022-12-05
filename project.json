@@ -1,14 +1,14 @@
 {
   "name": "forms",
   "projectType": "library",
-  "sourceRoot": "libs/fui/forms/src",
+  "sourceRoot": "packages/uimatrix/forms/src",
   "prefix": "hyperconverged",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/fui/forms"],
+      "outputs": ["coverage/packages/uimatrix/forms"],
       "options": {
-        "jestConfig": "libs/fui/forms/jest.config.js",
+        "jestConfig": "packages/uimatrix/forms/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/fui/forms/src/**/*.ts",
-          "libs/fui/forms/src/**/*.html"
+          "packages/uimatrix/forms/src/**/*.ts",
+          "packages/uimatrix/forms/src/**/*.html"
         ]
       },
       "outputs": ["{options.outputFile}"]
