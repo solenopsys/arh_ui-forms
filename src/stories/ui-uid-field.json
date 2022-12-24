@@ -1,0 +1,14 @@
+{
+  "name": "UidFiled",
+  "description": "Uid field",
+  "package": "@solenopsys/uimatrix-forms",
+  "component": "UidFiledComponent",
+  "io": {
+    "title": {
+      "directions": ["input"],
+      "type": "string"
+    }
+
+
+  }
+}

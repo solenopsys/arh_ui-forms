@@ -1,0 +1,9 @@
+{
+  "name": "Checkbox",
+  "description": "Checkbox",
+  "package": "@solenopsys/uimatrix-forms",
+  "component": "SCheckboxFieldComponent",
+  "io": {
+
+  }
+}
