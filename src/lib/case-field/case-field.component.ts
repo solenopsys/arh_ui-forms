@@ -5,8 +5,8 @@ import { ProviderService } from "../provider.service";
 
 @Component({
   selector: 'ui-case-field',
-  templateUrl: './ui-case-field.component.html',
-  styleUrls: ['./ui-case-field.component.css'],
+  templateUrl: './case-field.component.html',
+  styleUrls: ['./case-field.component.css'],
 })
 export class CaseFieldComponent implements OnInit {
   FT = FieldType;

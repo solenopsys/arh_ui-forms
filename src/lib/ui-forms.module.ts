@@ -12,10 +12,10 @@ import {MultilineFieldComponent} from './fields/multiline-field/multiline-field.
 import {UIdFieldComponent} from './fields/uid-field/uid-field.component';
 import {FileFieldComponent} from './fields/file-field/file-field.component';
 import {CodeFieldComponent} from './fields/code-field/code-field.component';
-import {DataViewComponent} from '../../../controls/src/lib/data-view/data-view.component';
 import {BrowserModule} from "@angular/platform-browser";
 import {UIIconsModule} from "@solenopsys/uimatrix-icons";
 import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
+import {UIControlsModule} from "@solenopsys/uimatrix-controls";
 
 const components = [
     FormComponent,
@@ -29,16 +29,18 @@ const components = [
     UIdFieldComponent,
     FileFieldComponent,
     CodeFieldComponent,
-    DataViewComponent,
 ];
 
 @NgModule({
     declarations: components,
-    imports: [CommonModule,
+    imports: [
+        CommonModule,
         BrowserModule,
         FormsModule,
         UIIconsModule,
-        UtilsModule],
+        UtilsModule,
+        UIControlsModule
+    ],
     exports: [
         FormComponent,
         CaseFieldComponent,

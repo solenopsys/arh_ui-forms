@@ -68,10 +68,10 @@
   </div>
 
   <div *ngFor="let view of config?.views">
-    <ui-sdata-view
+    <ui-data-view
       [config]="view"
       [data]="data[view.dataFrom]"
-    ></ui-sdata-view>
+    ></ui-data-view>
   </div>
 
   <div>
