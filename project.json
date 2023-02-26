@@ -1,5 +1,5 @@
 {
-  "name": "forms",
+  "name": "ui-forms",
   "projectType": "library",
   "sourceRoot": "packages/uimatrix/ui-forms/src",
   "prefix": "ui",
