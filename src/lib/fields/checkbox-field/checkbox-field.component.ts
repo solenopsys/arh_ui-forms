@@ -17,7 +17,7 @@ export class CheckboxFieldComponent
   }
 
   @Input('value')
-  set setData(value) {
+  set setData(value:(string|boolean)){
     this.value = value === 'true' || value === true;
   }
 }

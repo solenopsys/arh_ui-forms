@@ -10,18 +10,19 @@ import { EntityTitle } from "@solenopsys/ui-utils";
 })
 export class CodeFieldComponent
   extends AbstractField<EntityTitle>
-  implements OnInit, OnDestroy
+  implements OnInit
 {
-  @ViewChild('editor') editor: any;
+  @ViewChild('editor') editor!: any;
 
   @Input()
-  language: string;
+  language!: string;
 
-  editorOptions: { theme: string; language: string }; // todo подключить тему и убрать хардкод
+  editorOptions!: { theme: string; language: string }; // todo подключить тему и убрать хардкод
 
   ngOnInit(): void {
+    const white = true;
     this.editorOptions = {
-      theme: true ? 'vs' : 'vs-dark',
+      theme: white ? 'vs' : 'vs-dark',
       language: this.language,
     }; // todo подключить тему и убрать хардкод
   }
@@ -31,6 +32,4 @@ export class CodeFieldComponent
     console.log('EDITOR', this.editor);
     console.log('EVENT', $event);
   }
-
-  ngOnDestroy(): void {}
 }

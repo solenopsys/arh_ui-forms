@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {AbstractField} from '../../abstract-field.component';
 
 @Component({
@@ -8,12 +8,12 @@ import {AbstractField} from '../../abstract-field.component';
 })
 export class DateFieldComponent
   extends AbstractField<string>
-  implements OnInit
+
 {
   @Input()
   time = false;
 
-  ngOnInit(): void {}
+
 
   extract() {
     const string1: string = this.value;
@@ -24,7 +24,7 @@ export class DateFieldComponent
     }
   }
 
-  transformBack($event) {
+  transformBack($event:any) {
     this.valueChange.emit($event);
   }
 }
