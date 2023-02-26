@@ -1,7 +1,7 @@
 {
   "name": "FileFiled",
   "description": "File field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "FileFiledComponent",
   "io": {
     "title": {

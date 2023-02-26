@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnDestroy, OnInit, Output,} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
 import {AbstractField} from "../../abstract-field.component";
-import { DataProvider, EntityTitle } from "@solenopsys/uimatrix-utils";
+import { DataProvider, EntityTitle } from "@solenopsys/ui-utils";
 
 @Component({
   selector: 'ui-select-field',

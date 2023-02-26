@@ -1,7 +1,7 @@
 {
   "name": "CodeFiled",
   "description": "Code field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "CodeFiledComponent",
   "io": {
     "title": {

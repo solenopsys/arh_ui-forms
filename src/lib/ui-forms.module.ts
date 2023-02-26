@@ -13,9 +13,9 @@ import {UIdFieldComponent} from './fields/uid-field/uid-field.component';
 import {FileFieldComponent} from './fields/file-field/file-field.component';
 import {CodeFieldComponent} from './fields/code-field/code-field.component';
 import {BrowserModule} from "@angular/platform-browser";
-import {UIIconsModule} from "@solenopsys/uimatrix-icons";
-import {DeclaredService, UtilsModule} from "@solenopsys/uimatrix-utils";
-import {UIControlsModule} from "@solenopsys/uimatrix-controls";
+import {UIIconsModule} from "@solenopsys/ui-icons";
+import {DeclaredService, UtilsModule} from "@solenopsys/ui-utils";
+import {UIControlsModule} from "@solenopsys/ui-controls";
 
 const components = [
     FormComponent,
@@ -56,6 +56,6 @@ export class UIFormsModule {
 
 
     constructor(private ds: DeclaredService) {
-        ds.addComps("@solenopsys/uimatrix-forms", components)
+        ds.addComps("@solenopsys/ui-forms", components)
     }
 }

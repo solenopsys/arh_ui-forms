@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/uimatrix-forms",
+  "name": "@solenopsys/ui-forms",
   "version": "0.0.1",
   "scripts": {
     "test": "node index.js",

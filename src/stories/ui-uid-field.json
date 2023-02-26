@@ -1,7 +1,7 @@
 {
   "name": "UidFiled",
   "description": "Uid field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "UidFiledComponent",
   "io": {
     "title": {

@@ -1,7 +1,7 @@
 {
   "name": "DateFiled",
   "description": "Date field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "DateFiledComponent",
   "io": {
     "title": {

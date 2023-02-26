@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import { FacetType, FieldType, FormConfig, ICONS_TYPES } from "@solenopsys/uimatrix-utils";
+import { FacetType, FieldType, FormConfig, ICONS_TYPES } from "@solenopsys/ui-utils";
 
 @Component({
   selector: 'ui-form',

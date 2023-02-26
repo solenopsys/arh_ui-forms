@@ -1,7 +1,7 @@
 {
   "name": "NumberFiled",
   "description": "Number field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "NumberFiledComponent",
   "io": {
     "title": {

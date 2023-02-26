@@ -1,7 +1,7 @@
 {
   "name": "MultilineFiled",
   "description": "Multiline field",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "MultilineFiledComponent",
   "io": {
     "title": {

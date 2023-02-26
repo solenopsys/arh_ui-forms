@@ -1,4 +1,4 @@
-import { DataProvider } from "@solenopsys/uimatrix-utils";
+import { DataProvider } from "@solenopsys/ui-utils";
 
 
 export interface ProviderService{

@@ -1,7 +1,7 @@
 {
   "name": "FormField",
   "description": "Tex field for form",
-  "package": "@solenopsys/uimatrix-forms",
+  "package": "@solenopsys/ui-forms",
   "component": "STextFieldComponent",
   "io": {
     "data": {

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Inject, Input, OnInit, Output } from "@angular/core";
-import { DataProvider, EntityTitle, FieldType, FormField } from "@solenopsys/uimatrix-utils";
+import { DataProvider, EntityTitle, FieldType, FormField } from "@solenopsys/ui-utils";
 import { ProviderService } from "../provider.service";
 
 

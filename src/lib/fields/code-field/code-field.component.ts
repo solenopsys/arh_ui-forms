@@ -1,6 +1,6 @@
 import {Component, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {AbstractField} from '../../abstract-field.component';
-import { EntityTitle } from "@solenopsys/uimatrix-utils";
+import { EntityTitle } from "@solenopsys/ui-utils";
 
 
 @Component({

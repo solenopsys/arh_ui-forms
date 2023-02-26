@@ -2,7 +2,7 @@ import { Component, EventEmitter, Inject, Input, OnDestroy, OnInit, Output } fro
 import {AbstractField} from '../../abstract-field.component';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from "rxjs";
-import { DataProvider, EntityTitle } from "@solenopsys/uimatrix-utils";
+import { DataProvider, EntityTitle } from "@solenopsys/ui-utils";
 import { ProviderService } from "../../provider.service";
 
 @Component({

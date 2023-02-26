@@ -1,16 +1,16 @@
 {
   "name": "forms",
   "projectType": "library",
-  "sourceRoot": "packages/uimatrix/forms/src",
+  "sourceRoot": "packages/uimatrix/ui-forms/src",
   "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/packages/uimatrix/forms"
+        "coverage/packages/uimatrix/ui-forms"
       ],
       "options": {
-        "jestConfig": "packages/uimatrix/forms/jest.config.js",
+        "jestConfig": "packages/uimatrix/ui-forms/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -18,8 +18,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "packages/uimatrix/forms/src/**/*.ts",
-          "packages/uimatrix/forms/src/**/*.html"
+          "packages/uimatrix/ui-forms/src/**/*.ts",
+          "packages/uimatrix/ui-forms/src/**/*.html"
         ]
       },
       "outputs": [
