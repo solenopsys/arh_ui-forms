@@ -32,7 +32,7 @@
         <ng-container *ngIf="fieldConf.link.facets">
           <ng-container *ngFor="let facet of fieldConf.link.facets">
             <ng-container [ngSwitch]="facet?.type">
-              <ui-snumber-field
+              <ui-number-field
                 *ngSwitchCase="FT_NUMBER"
                 [width]="40"
                 style="
@@ -45,7 +45,7 @@
                 "
                 (valueChange)="dataChange.emit(data)"
               >
-              </ui-snumber-field>
+              </ui-number-field>
             </ng-container>
           </ng-container>
         </ng-container>

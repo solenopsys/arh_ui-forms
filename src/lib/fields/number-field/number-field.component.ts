@@ -8,7 +8,6 @@ import {AbstractField} from '../../abstract-field.component';
 })
 export class NumberFieldComponent
   extends AbstractField<number>
-  implements OnInit
 {
-  ngOnInit(): void {}
+
 }

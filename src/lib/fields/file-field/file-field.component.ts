@@ -1,9 +1,9 @@
-import { Component, EventEmitter, Inject, Input, OnDestroy, OnInit, Output } from "@angular/core";
+import {Component, EventEmitter, Inject, Input, Output} from "@angular/core";
 import {AbstractField} from '../../abstract-field.component';
 import {HttpClient} from '@angular/common/http';
 import {firstValueFrom} from "rxjs";
-import { DataProvider, EntityTitle } from "@solenopsys/ui-utils";
-import { ProviderService } from "../../provider.service";
+import {EntityTitle, FreeProvider} from "@solenopsys/ui-utils";
+import {ProviderService} from "../../provider.service";
 
 @Component({
   selector: 'ui-file-field',
@@ -12,7 +12,7 @@ import { ProviderService } from "../../provider.service";
 })
 export class FileFieldComponent
   extends AbstractField<EntityTitle>
-  implements OnInit, OnDestroy {
+   {
   @Input()
   override value!: any;
 
@@ -21,7 +21,7 @@ export class FileFieldComponent
   @Output()
   override valueChange = new EventEmitter<EntityTitle>();
 
-  dp: DataProvider;
+  dp: FreeProvider;
 
   fileToUpload: any;
 
@@ -29,14 +29,10 @@ export class FileFieldComponent
               @Inject("ps")
               private ps: ProviderService) {
     super();
-    this.dp = ps.getProvider( 'file', 'file.name');
+    this.dp = ps.getProvider( 'file', 'file.name') as FreeProvider;
   }
 
-  ngOnInit(): void {
-  }
 
-  ngOnDestroy(): void {
-  }
 
   uploadFileToActivity() {
     const endpoint = '/files';

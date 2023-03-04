@@ -1,6 +1,5 @@
-import { DataProvider } from "@solenopsys/ui-utils";
-
+import {DataProvider, FreeProvider} from "@solenopsys/ui-utils";
 
 export interface ProviderService{
-  getProvider(  key: string,  titleKey?: string):DataProvider
+  getProvider(  key: string,  titleKey?: string):FreeProvider | DataProvider
 }

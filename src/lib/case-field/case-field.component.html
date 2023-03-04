@@ -49,7 +49,7 @@
     </ui-date-field>
     <ui-checkbox-field
       *ngSwitchCase="FT.BOOLEAN"
-      [value]="data"
+      [value]="data === 'true' || data === true"
       (valueChange)="dataChange.emit($event)"
       [width]="width"
     >
