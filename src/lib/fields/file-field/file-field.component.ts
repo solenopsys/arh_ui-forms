@@ -14,7 +14,7 @@ export class FileFieldComponent
   extends AbstractField<EntityTitle>
    {
   @Input()
-  override value!: any;
+   declare  value: any;
 
   selectShow = false;
 
