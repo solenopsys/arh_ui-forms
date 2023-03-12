@@ -8,7 +8,7 @@ import {ProviderService} from "../../provider.service";
 @Component({
   selector: 'ui-file-field',
   templateUrl: './file-field.component.html',
-  styleUrls: ['./file-field.component.css'],
+  styleUrls: ['./file-field.component.scss'],
 })
 export class FileFieldComponent
   extends AbstractField<EntityTitle>

@@ -4,7 +4,7 @@ import {AbstractField} from '../../abstract-field.component';
 @Component({
   selector: 'ui-checkbox-field',
   templateUrl: './checkbox-field.component.html',
-  styleUrls: ['./checkbox-field.component.css'],
+  styleUrls: ['./checkbox-field.component.scss'],
 })
 export class CheckboxFieldComponent
   extends AbstractField<boolean>

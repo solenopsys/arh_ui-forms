@@ -4,7 +4,7 @@ import {AbstractField} from '../../abstract-field.component';
 @Component({
   selector: 'ui-text-field',
   templateUrl: './text-field.component.html',
-  styleUrls: ['./text-field.component.css'],
+  styleUrls: ['./text-field.component.scss'],
 })
 export class TextFieldComponent
   extends AbstractField<string>

@@ -6,7 +6,7 @@ import { DataProvider, EntityTitle } from "@solenopsys/ui-utils";
 @Component({
   selector: 'ui-select-field',
   templateUrl: './select-field.component.html',
-  styleUrls: ['./select-field.component.css'],
+  styleUrls: ['./select-field.component.scss'],
 })
 export class SelectFieldComponent
   extends AbstractField<EntityTitle>

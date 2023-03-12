@@ -6,7 +6,7 @@ import { EntityTitle } from "@solenopsys/ui-utils";
 @Component({
   selector: 'ui-code-field',
   templateUrl: './code-field.component.html',
-  styleUrls: ['./code-field.component.css'],
+  styleUrls: ['./code-field.component.scss'],
 })
 export class CodeFieldComponent
   extends AbstractField<EntityTitle>

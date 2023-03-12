@@ -4,7 +4,7 @@ import {AbstractField} from '../../abstract-field.component';
 @Component({
   selector: 'ui-date-field',
   templateUrl: './date-field.component.html',
-  styleUrls: ['./date-field.component.css'],
+  styleUrls: ['./date-field.component.scss'],
 })
 export class DateFieldComponent
   extends AbstractField<string>
