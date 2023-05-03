@@ -4,12 +4,14 @@
     [(ngModel)]="titleInf"
     (ngModelChange)="strObservable.next($event)"
     (focus)="strObservable.next(titleInf)"
+    [ngStyle]="{'width': width+'px'}"
   />
 
   <div
     class="menu-box"
-    [ngStyle]="{ visibility: visible ? 'visible' : 'hidden' }"
+    [ngStyle]="{ visibility: visible ? 'visible' : 'hidden','width': width+'px' }"
     *ngIf="filteredEntities | async as enitites"
+
   >
     <div
       class="item"
