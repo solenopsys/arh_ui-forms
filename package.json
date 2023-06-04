@@ -1,8 +1,12 @@
 {
   "name": "@solenopsys/ui-forms",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "@solenopsys/ui-controls": "0.1.0",
+    "@solenopsys/ui-icons": "0.1.0",
+    "@solenopsys/ui-utils": "0.1.0"
+  },
   "scripts": {
-    "test": "node index.js",
-    "build": "etsc -p tsconfig.lib.json"
+    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
   }
 }

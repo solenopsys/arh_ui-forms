@@ -1,6 +1,6 @@
-<div style="padding: 10px">
-  <h2>{{ config?.title }}</h2>
-  <div *ngFor="let fieldConf of config?.fields">
+<div style="padding: 10px" *ngIf="config">
+  <h2>{{ config.title }}</h2>
+  <div *ngFor="let fieldConf of config.fields">
     <div style="padding-top: 10px">
       <img
         *ngIf="ICONS[fieldConf.type]"

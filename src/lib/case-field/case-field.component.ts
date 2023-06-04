@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Inject, Input, OnInit, Output} from "@angular/core";
-import {DataProvider, EntityTitle, FieldType, FormField, FreeProvider} from "@solenopsys/ui-utils";
+import {DataProvider, EntityTitle, FieldType, FormField} from "@solenopsys/ui-utils";
+
 import {ProviderService} from "../provider.service";
 
 

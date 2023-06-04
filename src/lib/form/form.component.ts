@@ -8,7 +8,7 @@ import { FacetType, FieldType, FormConfig, ICONS_TYPES } from "@solenopsys/ui-ut
 })
 export class FormComponent implements OnInit {
   @Input()
-  config: FormConfig | undefined;
+  config!: FormConfig ;
   ICONS = ICONS_TYPES;
 
   data: any;
