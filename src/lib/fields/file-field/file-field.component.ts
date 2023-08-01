@@ -14,7 +14,7 @@ import {ProviderService} from "../../provider.service";
 export class FileFieldComponent
     extends AbstractField<EntityTitle> {
     @Input()
-    declare value: any;
+     value: any;
 
     selectShow = false;
 
