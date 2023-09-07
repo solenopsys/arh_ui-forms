@@ -11,7 +11,7 @@ export class AbstractField<TYPE> {
   value!: any;
 
   @Output()
-  valueChange = new EventEmitter<TYPE>();
+  valueChange:EventEmitter<TYPE>;
 
   @Input()
   width!: number;
