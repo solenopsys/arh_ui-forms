@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from "@angular/core";
+import {Component, EventEmitter, Input, OnInit} from "@angular/core";
 import {AbstractField} from '../../abstract-field.component';
 
 @Component({
@@ -12,5 +12,7 @@ export class TextFieldComponent
 {
   @Input()
   password=false;
+
+
   ngOnInit(): void {}
 }
